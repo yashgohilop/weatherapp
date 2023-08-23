@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background-image: linear-gradient(25deg, rgb(0, 191, 255), rgb(251, 33, 255));
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder{
+  color: white;
+}
+
+.weather {
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  height: 60vh;
+  padding: 5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.weather > div {
+  margin: 0.625rem;
+  text-align: center;
+}
+
+.weather1 {
+  font-size: 4rem;
+}
+
+.weather p {
+  font-size: 2rem;
+}
+.weather span {
+  font-size: 0.75rem;
+}
+
+.weather3 span {
+  margin: 0.3rem;
+}
+
+.weather3 img {
+  width: 2rem;
+}
+nav {
+  border-radius: 10px;
+  padding: 1rem 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.18);
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+
+  background-color: rgba(180, 177, 177, 0.075);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav form {
+  margin: auto;
+  width: 90%;
+  grid-template-columns: 4fr 2fr;
+  display: grid;
+}
+
+.searchField {
+  font-size: 1.1rem;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 98%;
+}
+
+nav form button {
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-image: linear-gradient(25deg, rgb(0, 191, 255), rgb(251, 33, 255));
+  outline: none;
+  border: 1px solid rgba(87, 87, 87, 0.621);
+  cursor: pointer;
+}
+
+footer{
+  text-align: center;
+  color: rgb(72, 72, 72);
+  font-size: small;
+}
